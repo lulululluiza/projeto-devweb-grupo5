@@ -1,0 +1,17 @@
+.links-navegation {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.links-navegation li { 
+	margin-right: 46px;
+}
+
+.links-navegation :nth-child(4) { 
+	margin-right: 23px;
+}
+
+.links-navegation :nth-child(5) { 
+	margin-right: 23px;
+}
