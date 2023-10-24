@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button {
+    width: 90px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #ffcb05;
+    align-items: center;
+}
+
+li button a {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    background-color: black;
+    display: flex;
+}
+
+header .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+nav a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.banner {
+    height: 900px;
+    background-color: rgb(97, 241, 241);
+    background-image: url(../img/background01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.pokedex {
+    height: 800px;
+    background-color: rgb(236, 160, 106);
+}
+
+.galeria {
+    height: 800px;
+    background-color: rgb(144, 235, 156);
+}
+
+.artigos {
+    height: 800px;
+    background-color: rgb(144, 235, 156);
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    font-size: 17px;
+    color: white;
+}
+
+.footer__container {
+    width: 1172px;
+    height: 280px;
+    padding: 94px 56px 48px 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos {
+    width: 375px;
+    height: 171px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infos__text {
+    font-size: 17px;
+}
+.infos_icons {
+}
+
+.navigation {
+    width: 274px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    display: flex;
+    height: 130px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+}
+
+.navigation ul li::marker {
+    content: url('../img/icon_marker.svg');
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts {
+    width: 274px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__rua__email {
+    display: flex;
+}
+
+.contacts__rua__email p {
+    margin-left: 10px;
+}
+
+.contacts__email__input {
+    background-color: #eef1f4;
+    padding: 20px 36px 20px 13px;
+    border: none;
+}
+
+.contacts__email__button {
+    width: 173px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #ffcb05;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+}
+
+.infos__title,
+.navigation__title,
+.contacts__title {
+    font-size: 25px;
+}
