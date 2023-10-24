@@ -3,28 +3,32 @@
 
 <head>
   <title>Artigos Pokémon</title>
-  <link rel="stylesheet" type="text/css" href="index-style.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/index-style.css">
   <meta charset="utf-8">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <img src="" alt="">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="resources/img/Pokemon 1.svg" alt="Logo do Pokemon">
+      </div>
+
+      <div class="menu__section">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pokedex</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li> │</li>
+            <li><a>Forum</a></li>
+            <li><button><a href="Login">Login</a></button></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
-    <nav>
-      <ul class="links-navegation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pokedex</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="artigos/artigos.html">Artigos</a></li>
-        <li>|</li>
-        <li><a href="forum/forum.html">Fórum</a></li>
-        <li>
-          <button type="button">Login</button>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -33,8 +37,18 @@
       <p>Descubra, explore e compartilhe suas aventuras conosco.</p>
     </section>
 
-    <section class="noticias">
-      <h2>Notícias Recentes</h2>
+    <section class="pokedex">
+      <h2>Pokedex</h2>
+      <!-- Adicione artigos ou destaques aqui -->
+    </section>
+
+    <section class="galeria">
+      <h2>Galeria</h2>
+      <!-- Adicione artigos ou destaques aqui -->
+    </section>
+
+    <section class="artigos">
+      <h2>Artigos</h2>
       <!-- Adicione artigos ou destaques aqui -->
     </section>
   </main>
@@ -47,10 +61,10 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
         <div class="infos_icons">
-          <img src="resources/icon_facebook.svg">
-          <img src="resources/icon_twitter.svg">
-          <img src="resources/icon_instagram.svg">
-          <img src="resources/icon_linkedin.svg">
+          <img src="resources/img/icon_facebook.svg">
+          <img src="resources/img/icon_twitter.svg">
+          <img src="resources/img/icon_instagram.svg">
+          <img src="resources/img/icon_linkedin.svg">
         </div>
       </div>
 
@@ -58,7 +72,7 @@
         <h3 class="navigation__title">NAVEGAÇÃO</h3>
         <ul>
           <li><a href="">&nbsp;Homepage</a></li>
-          <li><a href="">&nbsp;Pokede</a></li>
+          <li><a href="">&nbsp;Pokedex</a></li>
           <li><a href="">&nbsp;Galeria</a></li>
           <li><a href="">&nbsp;Artigos</a></li>
         </ul>
@@ -67,11 +81,11 @@
       <div class="contacts">
         <h3 class="contacts__title">CONTATOS</h3>
         <div class="contacts__rua__email">
-          <img src="resources/icon_localization.svg">
+          <img src="resources/img/icon_localization.svg">
           <p>&nbsp;Rua das Estrelas 99</p>
         </div>
         <div class="contacts__rua__email">
-          <img src="resources/icon_email.svg">
+          <img src="resources/img//icon_email.svg">
           <p>Hello@pokemon.com</p>
         </div>
         <input class="contacts__email__input" type="text" placeholder="Email Address">
