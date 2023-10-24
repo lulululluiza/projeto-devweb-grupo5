@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pokédex</title>
+    <link rel="stylesheet" type="text/css" href="pokedex.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <!-- Menu -->
+
+    <header>
+      <img class="logo" src="../resources/logo.svg">
+      <nav>
+        <ul class="links__navigation">
+          <li>Home</li>
+          <li>Pokedex</li>
+          <li>Galeria</li>
+          <li>Artigos</li>
+          <li>|</li>
+          <li>Fórum</li>
+          <li>
+            <button type="button">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Pokédex -->
+
+    <section class="pesquisa">
+      <h1 class="pesquisa__title">Pokédex</h1>
+      <input class="pesquisa__bar" type="text" placeholder="Pesquisar pokémon"></input>        
+    </section>
+
+    <section class="pokedex__list">
+      <div class="pokedex__pokemon">
+        <p class="pokedex__numero">#000</p>
+        <img class="pokedex__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="">
+        <h2 class="pokedex__nome">Pikachu</h2>
+<div class="pokedex__stats">
+  <p>HP</p>
+  <p>Attack</p>
+  <p>Defense</p>
+  <p>Special Attack</p>
+  <p>Special Defense</p>
+  <p>Speed</p>
+</div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+
+    <section class="modal hidden">
+      <div class="flex">
+        <img class="pokedex__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" />
+        <button class="btn-close">⨉</button>
+      </div>
+      <div>
+        <p class="pokedex__numero">#000</p>
+        <h2 class="pokedex__nome">Pikachu</h2>
+        <p>Tipo: elétrico</p>
+        <p>Habilidades:</p>
+        <ul>
+          <li>static</li>
+          <li>lightning rod</li>
+        </ul>
+        <div class="pokedex__stats">
+          <p>HP</p>
+          <p>Attack</p>
+          <p>Defense</p>
+          <p>Special Attack</p>
+          <p>Special Defense</p>
+          <p>Speed</p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="overlay hidden"></div>
+    
+
+    <!-- Rodapé -->
+
+    <footer>
+      <div class="footer__container">
+        <div class="infos">
+          <h3 class="infos__title">INFORMAÇÕES</h3>
+          <p class="infos__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="infos_icons">
+            <img src="../resources/icon_facebook.svg">
+            <img src="../resources/icon_twitter.svg">
+            <img src="../resources/icon_instagram.svg">
+            <img src="../resources/icon_linkedin.svg">
+          </div>
+        </div>
+
+        <div class="navigation">
+          <h3 class="navigation__title">NAVEGAÇÃO</h3>
+          <ul>
+            <li><a href="">&nbsp;Homepage</a></li>
+            <li><a href="">&nbsp;Pokedex</a></li>
+            <li><a href="">&nbsp;Galeria</a></li>
+            <li><a href="">&nbsp;Artigos</a></li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <h3 class="contacts__title">CONTATOS</h3>
+          <div class="contacts__rua__email">
+            <img src="../resources/icon_localization.svg">
+            <p>&nbsp;Rua das Estrelas 99</p>
+          </div>
+          <div class="contacts__rua__email">
+            <img src="../resources/icon_email.svg">
+            <p>Hello@pokemon.com</p>
+          </div>
+          <input class="contacts__email__input" type="text" placeholder="Email Address">
+          <button class="contacts__email__button" type="button">SUBSCRIBE</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
