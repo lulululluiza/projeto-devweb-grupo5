@@ -64,7 +64,6 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .pokedex {
@@ -75,6 +74,19 @@ nav a {
 .galeria {
     height: 800px;
     background-color: rgb(144, 235, 156);
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.card {
+    margin-left: 30px;
 }
 
 .artigos {
