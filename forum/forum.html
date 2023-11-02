@@ -4,24 +4,34 @@
     <meta charset="utf-8">
     <title>Fórum</title>
     <link rel="stylesheet" type="text/css" href="forum.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/header_footer_styles.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="../resources/logo.svg" alt="Logo">
-        <nav>
-          <ul class="links__navegation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pokedex/pokedex.html">Pokedex</a></li> <!-- ajuste o caminho - OK -->
-            <li><a href="../galeria/galeria.html">Galeria</a></li> <!-- ajuste o caminho - OK -->
-            <li><a href="../artigos/artigos.html">Artigos</a></li>
-            <li>|</li>
-            <li><a href="#">Fórum</a></li> <!-- Esta é a página do fórum, pode deixar o # -->
-            <li><button type="button">Login</button></li>
+<!-- Menu -->
+
+<header>
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="../resources/img/Pokemon 1.svg" alt="Logo do Pokemon">
+    </div>
+
+    <div class="menu__section">
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pokedex/pokedex.html">Pokedex</a></li>
+          <li><a href="../galeria/galeria.html">Galeria</a></li>
+          <li><a href="../artigos/artigos.html">Artigos</a></li>
+          <li> │</li>
+          <li><a href="forum.html">Fórum</a></li>
+          <li><button class="login__button"><a href="forum.html">Login</a></button></li>
         </ul>
-        
-        </nav>
-    </header>
-    <section class="pesquisa">
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="pesquisa">
         <h1 class="pesquisa__title">Buscar</h1>
         <input class="pesquisa__bar" type="text" placeholder="Digite sua busca">
     </section>
@@ -99,28 +109,29 @@
 
     <footer>
       <div class="footer__container">
-          <div class="infos">
-              <h3 class="infos__title">INFORMAÇÕES</h3>
-              <p class="infos__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-              <div class="infos_icons">
-                  <img src="../resources/icon_facebook.svg" alt="Facebook">
-                  <img src="../resources/icon_twitter.svg" alt="Twitter">
-                  <img src="../resources/icon_instagram.svg" alt="Instagram">
-                  <img src="../resources/icon_linkedin.svg" alt="LinkedIn">
-              </div>
+        <div class="infos">
+          <h3 class="infos__title">INFORMAÇÕES</h3>
+          <p class="infos__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="infos_icons">
+            <img src="../resources/img/icon_facebook.svg">
+            <img src="../resources/img/icon_twitter.svg">
+            <img src="../resources/img/icon_instagram.svg">
+            <img src="../resources/img/icon_linkedin.svg">
           </div>
+        </div>
 
-          <nav class="navigation">
-            <h3 class="navigation__title">NAVEGAÇÃO</h3>
-            <ul>
-                <li><a href="../index.html">Homepage</a></li>
-                <li><a href="caminho/para/pokede.html">Pokede</a></li> <!-- ajuste o caminho -->
-                <li><a href="caminho/para/galeria.html">Galeria</a></li> <!-- ajuste o caminho -->
-                <li><a href="../artigos/artigos.html">Artigos</a></li>
-            </ul>
-        </nav>
+        <div class="navigation">
+          <h3 class="navigation__title">NAVEGAÇÃO</h3>
+          <ul>
+            <li><a href="../index.html">&nbsp;Homepage</a></li>
+            <li><a href="../pokedex/pokedex.html">&nbsp;Pokedex</a></li>
+            <li><a href="../galeria/galeria.html">&nbsp;Galeria</a></li>
+            <li><a href="../artigos/artigos.html">&nbsp;Artigos</a></li>
+            <li><a href="forum.html">&nbsp;Fórum</a></li>
+          </ul>
+        </div>
         
 
           <div class="contacts">

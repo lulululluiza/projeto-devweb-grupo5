@@ -1,2 +1,0 @@
-- Alterar algumas propriedades pra variáveis (cores, por exemplo), colocar essas infos em um css mais geral (principalmente por causa das cores)
-- Herdar do mesmo local o css do header e do footer.
