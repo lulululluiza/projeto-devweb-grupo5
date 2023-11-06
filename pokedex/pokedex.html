@@ -2,18 +2,22 @@
 <html lang="pt-br">
   <head>
     <title>Pokédex</title>
-    <link rel="stylesheet" type="text/css" href="pokedex.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/header_footer_styles.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="pokedex.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../resources/css/header_footer_styles.css"
+    />
+    <link rel="icon" href="./resources/favicon-16x16.png" />
+    <meta charset="utf-8" />
   </head>
   <body>
-
     <!-- Menu -->
 
     <header>
       <div class="header__container">
         <div class="header__logo">
-          <img src="../resources/img/Pokemon 1.svg" alt="Logo do Pokemon">
+          <img src="../resources/img/Pokemon 1.svg" alt="Logo do Pokemon" />
         </div>
 
         <div class="menu__section">
@@ -23,9 +27,13 @@
               <li><a href="pokedex.html">Pokedex</a></li>
               <li><a href="../galeria/galeria.html">Galeria</a></li>
               <li><a href="../artigos/artigos.html">Artigos</a></li>
-              <li> │</li>
+              <li>│</li>
               <li><a href="../forum/forum.html">Fórum</a></li>
-              <li><button class="login__button"><a href="pokedex.html">Login</a></button></li>
+              <li>
+                <button class="login__button">
+                  <a href="pokedex.html">Login</a>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -34,7 +42,35 @@
 
     <!-- Pokédex -->
 
-    <section class="pesquisa">
+    <main>
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+        alt=""
+        class="pokemon__sprite"
+      />
+      <img src="./resources/pokedex.png" alt="pokedex" class="pokedex" />
+
+      <h1 class="pokemon__data">
+        <span class="pokemon__number">00</span> -
+        <span class="pokemon__name">Pikachu</span>
+      </h1>
+
+      <form class="pokedex__form">
+        <input
+          type="search"
+          class="input__search"
+          placeholder="Nome ou número"
+          required
+        />
+      </form>
+
+      <div class="pokedex__buttons">
+        <button class="button btn-prev">Anterior &lt;</button>
+        <button class="button btn-next">Próximo &gt;</button>
+      </div>
+    </main>
+
+    <!-- <section class="pesquisa">
       <h1 class="pesquisa__title">Pokédex</h1>
       <input class="pesquisa__bar" type="text" placeholder="Pesquisar pokémon"></input>        
     </section>
@@ -53,11 +89,11 @@
   <p>Speed</p>
 </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Modal -->
 
-    <section class="modal hidden">
+    <!-- <section class="modal hidden">
       <div class="flex">
         <img class="pokedex__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" />
         <button class="btn-close">⨉</button>
@@ -82,8 +118,7 @@
       </div>
     </section>
     
-    <div class="overlay hidden"></div>
-    
+    <div class="overlay hidden"></div> -->
 
     <!-- Rodapé -->
 
@@ -92,13 +127,14 @@
         <div class="infos">
           <h3 class="infos__title">INFORMAÇÕES</h3>
           <p class="infos__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <div class="infos_icons">
-            <img src="../resources/img/icon_facebook.svg">
-            <img src="../resources/img/icon_twitter.svg">
-            <img src="../resources/img/icon_instagram.svg">
-            <img src="../resources/img/icon_linkedin.svg">
+            <img src="../resources/img/icon_facebook.svg" />
+            <img src="../resources/img/icon_twitter.svg" />
+            <img src="../resources/img/icon_instagram.svg" />
+            <img src="../resources/img/icon_linkedin.svg" />
           </div>
         </div>
 
@@ -116,15 +152,21 @@
         <div class="contacts">
           <h3 class="contacts__title">CONTATOS</h3>
           <div class="contacts__rua__email">
-            <img src="../resources/img/icon_localization.svg">
+            <img src="../resources/img/icon_localization.svg" />
             <p>&nbsp;Rua das Estrelas 99</p>
           </div>
           <div class="contacts__rua__email">
-            <img src="../resources/img/icon_email.svg">
+            <img src="../resources/img/icon_email.svg" />
             <p>Hello@pokemon.com</p>
           </div>
-          <input class="contacts__email__input" type="text" placeholder="Email Address">
-          <button class="contacts__email__button" type="button">SUBSCRIBE</button>
+          <input
+            class="contacts__email__input"
+            type="text"
+            placeholder="Email Address"
+          />
+          <button class="contacts__email__button" type="button">
+            SUBSCRIBE
+          </button>
         </div>
       </div>
     </footer>
