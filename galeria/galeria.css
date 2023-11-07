@@ -4,14 +4,36 @@
 	width: auto;
 }
 
-
+body{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	text-align: center;
+	background: linear-gradient(to bottom, #6ab7f5, #fff);
+	min-height: 100vh;
+}
 
 /* Barra de pesquisa  */
-.pesquisa {
+.barra__pesquisa {
+ font-size: 50px;
+ font-family: Tahoma;
+ color: whitesmoke;
  display: flex;
+ flex-direction: column;
  align-items: center;
- flex-flow: column;
  padding-top: 62px;
+}
+
+.pesquisa__bar{
+	width: 50%;
+	color: white;
+}
+
+.button{
+	background-color: transparent;
+	width: 60px;
+	color: black;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	border-radius: 30px;
+
 }
 
 .pesquisa__title {	
@@ -32,9 +54,11 @@
 
 /* Posts  */
 .img__gallery {
+	margin-left: 10%;
+	margin-right: 5%;
     align-items: center;
 	display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, 40vw);
     grid-gap: 15px;
 }
@@ -50,4 +74,11 @@
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+.caption{
+	width: 250px;	
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 15px;
+	text-align: center;
 }
