@@ -1,132 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <title>Pokémon</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources/css/index-style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources/css/header_footer_styles.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <title>Pokémon</title>
-  <link rel="stylesheet" type="text/css" href="resources/css/index-style.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/header_footer_styles.css">
-  <meta charset="utf-8">
-</head>
+  <body>
+    <main>
+      <section class="banner">
+        <!-- <header>
+          <div class="header__container">
+            <div class="header__logo">
+              <img src="resources/img/Pokemon 1.svg" alt="Logo do Pokemon" />
+            </div>
 
-<body>
-  <main>
-    <section class="banner">
-      <header>
-        <div class="header__container">
-          <div class="header__logo">
-            <img src="resources/img/Pokemon 1.svg" alt="Logo do Pokemon">
+            <div class="menu__section">
+              <nav>
+                <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="pokedex/pokedex.html">Pokedex</a></li>
+                  <li><a href="galeria/galeria.html">Galeria</a></li>
+                  <li><a href="artigos/artigos.html">Artigos</a></li>
+                  <li>│</li>
+                  <li><a href="forum/forum.html">Forum</a></li>
+                  <li>
+                    <button class="login__button">
+                      <a href="index.html">Login</a>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
+        </header> -->
 
-          <div class="menu__section">
-            <nav>
-              <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pokedex/pokedex.html">Pokedex</a></li>
-                <li><a href="galeria/galeria.html">Galeria</a></li>
-                <li><a href="artigos/artigos.html">Artigos</a></li>
-                <li> │</li>
-                <li><a href="forum/forum.html">Forum</a></li>
+        <nav class="navbar navbar-expand-lg header">
+          <div class="container-fluid">
+            <img
+              class="navbar-brand"
+              src="resources/img/Pokemon 1.svg"
+              alt="Logo do Pokemon"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar__items ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light fs-6"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light fs-6"
+                    href="./pokedex/pokedex.html"
+                    >Pokédex</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light fs-6"
+                    href="./galeria/galeria.html"
+                    >Galeria</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light fs-6"
+                    href="./artigos/artigos.html"
+                    >Artigos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fs-6" href="./forum/forum.html"
+                    >Fórum</a
+                  >
+                </li>
                 <li>
                   <button class="login__button">
-                    <a href="index.html">Login</a>
+                    <a href="pokedex.html">Login</a>
                   </button>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
+        </nav>
 
-        </div>
-      </header>
-      <div class="content__banner">
-        <div class="text__banner">
-          <div class="text__banner_content">
-            <h2>TEMOS QUE PEGAR!!!</h2>
-            <p>O maior site brasileiro sobre pokémon.</p>
-            <a href=""></a>
+        <div class="content__banner">
+          <div class="text__banner">
+            <div class="text__banner_content">
+              <h2>TEMOS QUE PEGAR!!!</h2>
+              <p>O maior site brasileiro sobre pokémon.</p>
+              <a href=""></a>
+            </div>
+          </div>
+          <div class="image__banner">
+            <img
+              id="imgAshPicachu"
+              src="./resources/img/ash_picachu.jpg"
+              alt="Ash e Pikacgu"
+            />
           </div>
         </div>
-        <div class="image__banner">
-          <img id="imgAshPicachu" src="./resources/img/ash_picachu.jpg" alt="Ash e Pikacgu">
-        </div>
-      </div>
+      </section>
 
-    </section>
-
-    <section class="pokedex">
-      <h2>Quem é esse Pokemon?</h2>
-      <p>INFORMAÇÕES SOBRE TODOS OS POKÉMONS</p>
-      <a href="pokedex/pokedex.html">POKEDEX</a>
-      <!-- Adicione artigos ou destaques aqui -->
-    </section>
-
-    <section class="galeria">
-      <div class="text__galeria">
+      <section class="pokedex">
         <h2>Quem é esse Pokemon?</h2>
         <p>INFORMAÇÕES SOBRE TODOS OS POKÉMONS</p>
-        <a href="galeria/galeria.html">ACESSAR</a>
-      </div>
-      <div class="cards">
+        <a href="pokedex/pokedex.html">POKEDEX</a>
+        <!-- Adicione artigos ou destaques aqui -->
+      </section>
 
-        <img src="resources/img/galeria_img.png" alt="cards da galeria de imagens">
+      <section class="galeria">
+        <div class="text__galeria">
+          <h2>Quem é esse Pokemon?</h2>
+          <p>INFORMAÇÕES SOBRE TODOS OS POKÉMONS</p>
+          <a href="galeria/galeria.html">ACESSAR</a>
+        </div>
+        <div class="cards">
+          <img
+            src="resources/img/galeria_img.png"
+            alt="cards da galeria de imagens"
+          />
+        </div>
+      </section>
 
-      </div>
+      <section class="artigos">
+        <div class="text__artigos">
+          <h2>Artigos sobre o Mundo Pokemon</h2>
+          <p>Artigos sobre jogos, episódios, noticias e jogos</p>
+          <a href="artigos/artigos.html">ACESSAR</a>
+        </div>
+        <div class="cards">
+          <img
+            src="resources/img/artigos_img.png"
+            alt="cards da galeria de imagens"
+          />
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <div class="footer__container">
+        <div class="infos">
+          <h3 class="infos__title">INFORMAÇÕES</h3>
+          <p class="infos__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="infos_icons">
+            <img src="resources/img/icon_facebook.svg" />
+            <img src="resources/img/icon_twitter.svg" />
+            <img src="resources/img/icon_instagram.svg" />
+            <img src="resources/img/icon_linkedin.svg" />
+          </div>
+        </div>
 
-    </section>
+        <div class="navigation">
+          <h3 class="navigation__title">NAVEGAÇÃO</h3>
+          <ul>
+            <li><a href="index.html">&nbsp;Homepage</a></li>
+            <li><a href="pokedex/pokedex.html">&nbsp;Pokedex</a></li>
+            <li><a href="galeria/galeria.html">&nbsp;Galeria</a></li>
+            <li><a href="artigos/artigos.html">&nbsp;Artigos</a></li>
+            <li><a href="forum/forum.html">&nbsp;Fórum</a></li>
+          </ul>
+        </div>
 
-    <section class="artigos">
-      <div class="text__artigos">
-        <h2>Artigos sobre o Mundo Pokemon</h2>
-        <p>Artigos sobre jogos, episódios, noticias e jogos</p>
-        <a href="artigos/artigos.html">ACESSAR</a>
-      </div>
-      <div class="cards">
-        <img src="resources/img/artigos_img.png" alt="cards da galeria de imagens">
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer__container">
-      <div class="infos">
-        <h3 class="infos__title">INFORMAÇÕES</h3>
-        <p class="infos__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-        <div class="infos_icons">
-          <img src="resources/img/icon_facebook.svg">
-          <img src="resources/img/icon_twitter.svg">
-          <img src="resources/img/icon_instagram.svg">
-          <img src="resources/img/icon_linkedin.svg">
+        <div class="contacts">
+          <h3 class="contacts__title">CONTATOS</h3>
+          <div class="contacts__rua__email">
+            <img src="resources/img/icon_localization.svg" />
+            <p>&nbsp;Rua das Estrelas 99</p>
+          </div>
+          <div class="contacts__rua__email">
+            <img src="resources/img//icon_email.svg" />
+            <p>Hello@pokemon.com</p>
+          </div>
+          <input
+            class="contacts__email__input"
+            type="text"
+            placeholder="Email Address"
+          />
+          <button class="contacts__email__button" type="button">
+            SUBSCRIBE
+          </button>
         </div>
       </div>
+    </footer>
+  </body>
 
-      <div class="navigation">
-        <h3 class="navigation__title">NAVEGAÇÃO</h3>
-        <ul>
-          <li><a href="index.html">&nbsp;Homepage</a></li>
-          <li><a href="pokedex/pokedex.html">&nbsp;Pokedex</a></li>
-          <li><a href="galeria/galeria.html">&nbsp;Galeria</a></li>
-          <li><a href="artigos/artigos.html">&nbsp;Artigos</a></li>
-          <li><a href="forum/forum.html">&nbsp;Fórum</a></li>
-        </ul>
-      </div>
-
-      <div class="contacts">
-        <h3 class="contacts__title">CONTATOS</h3>
-        <div class="contacts__rua__email">
-          <img src="resources/img/icon_localization.svg">
-          <p>&nbsp;Rua das Estrelas 99</p>
-        </div>
-        <div class="contacts__rua__email">
-          <img src="resources/img//icon_email.svg">
-          <p>Hello@pokemon.com</p>
-        </div>
-        <input class="contacts__email__input" type="text" placeholder="Email Address">
-        <button class="contacts__email__button" type="button">SUBSCRIBE</button>
-      </div>
-    </div>
-  </footer>
-</body>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </html>
