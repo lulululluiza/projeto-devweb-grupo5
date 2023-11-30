@@ -1,3 +1,4 @@
+
 const pokemonNumber = document.querySelector(".pokemon__number");
 const pokemonName = document.querySelector(".pokemon__name");
 const pokemonSprite = document.querySelector(".pokemon__sprite");
@@ -41,6 +42,30 @@ const renderPokemon = async (pokemon) => {
         pokemonSprite.style.display = "none";
     }
 };
+
+const fetchStats = async (pokemon) => {
+
+    const data = await fetchPokemon(pokemon)
+
+    if (data) {
+        const stats = `Stats
+        \n${data.stats[0].stat.name} - ${data.stats[0].base_stat}
+        \n${data.stats[1].stat.name} - ${data.stats[1].base_stat}
+        \n${data.stats[2].stat.name} - ${data.stats[2].base_stat}
+        \n${data.stats[3].stat.name} - ${data.stats[3].base_stat}
+        \n${data.stats[4].stat.name} - ${data.stats[4].base_stat}
+        \n${data.stats[5].stat.name} - ${data.stats[5].base_stat}
+        `
+
+        alert(stats)
+        console.log(stats)
+    }
+};
+
+pokemonSprite.addEventListener("click", () => {
+    fetchStats(searchPokemon)
+})
+
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
