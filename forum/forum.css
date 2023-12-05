@@ -4,7 +4,12 @@
 	width: auto;
 }
 
-
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	text-align: center;
+	min-height: 100vh;	
+	background: linear-gradient(to bottom, #6ab7f5, #fff);
+}
 
 
 /* Barra de pesquisa  */
@@ -17,6 +22,8 @@
 
 .pesquisa__title {	
 	margin-bottom: 53px;
+	font-size: 75px;
+	color: white;
 }
 
 .pesquisa__bar {
@@ -27,6 +34,8 @@
 	background-repeat: no-repeat;
 	background-position: 740px ;
 	margin-bottom: 122px;
+	padding-left: 30px;
+	background-color: white;
 }
 
 
@@ -36,10 +45,11 @@
 	flex-direction: column;	
 	align-items: center;
 	justify-content: center;
+	gap: 30px;
 }
 
 .forum__section {	
-	width: 1157px;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -89,6 +99,6 @@
 	background-color: #F2F2F2;
 }
 
-.pesquisa, .forum {
-	background-color: #EEF1F4;
+.forum__item:last-child {
+	margin-bottom: 10px;
 }

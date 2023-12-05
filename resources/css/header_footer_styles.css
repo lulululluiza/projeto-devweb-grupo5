@@ -74,6 +74,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .infos__text {
@@ -96,6 +97,7 @@ footer {
     justify-content: space-around;
     padding: 10px;
     list-style: none;
+    text-align: left;
 }
 
 .navigation ul li::marker {
@@ -142,5 +144,6 @@ footer {
 .infos__title,
 .navigation__title,
 .contacts__title {
-    font-size: 25px;
+    font-size: 25px;    
+    text-align: left;
 }
